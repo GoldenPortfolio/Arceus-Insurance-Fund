@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState, useCallback } from 'react'
 import btc from '../../assets/btc.png'
 import { CoinMarketContext } from '../../context/context'
-import CMCtableHeader from './CMCtableHeader'
-import CMCtableRow from './CMCtableRow'
+import CMCtableHeader from './cmcTableHeader'
+import CMCtableRow from './cmcTableRow'
 
 const CMCtable = () => {
   let { getTopTenCoins } = useContext(CoinMarketContext)
@@ -21,6 +21,7 @@ const CMCtable = () => {
         const element = apiResponse[i]
         if (element.cmc_rank <= 10) filteredResponse.push(element)
       }
+
       setCoinData(filteredResponse)
     } catch (e) {
       console.log(e.message)

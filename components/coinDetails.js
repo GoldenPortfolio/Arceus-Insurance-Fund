@@ -15,14 +15,14 @@ import bnb from '../assets/bnb.png'
 import { useMoralis } from 'react-moralis'
 
 const styles = {
-  coinDetails: `min-h-screen text-white`,
+  coinDetails: `min-h-screen text-white text-2x`,
   coinDetailsLinks: `flex mt-3 flex-wrap`,
   greyBtn: `mr-3 mb-3 bg-slate-800 px-3 py-1 rounded-xl`,
   borderLeft: `ml-10 pl-5 w-full border-l border-gray-800`,
   title: `text-gray-400 whitespace-nowrap mr-2`,
   coinDetailsWrapper: `coin-details flex max-w-screen-2xl m-auto pt-20`,
   coinSymbol: `bg-slate-800 flex items-center px-2 rounded-xl`,
-  coinInfo: `flex justify-between mt-10 p-4 border-t border-gray-800`,
+  coinInfo: `flex justify-between mt-10 pl-4 ml-12 border-t border-gray-800`,
   coinRates: `w-full flex items-start justify-between`,
   flexBetween: `flex justify-between`,
 }
@@ -162,6 +162,7 @@ const CoinDetails = ({ coinName, coinSymbol, price }) => {
               {coinIcon()}
               &nbsp; &nbsp;
               <div>
+                <h1>Insurance Contract</h1>
                 <div className="flex">
                   <p className="text-3xl">{coinName}</p>
                   &nbsp; &nbsp;&nbsp; &nbsp;
@@ -175,11 +176,10 @@ const CoinDetails = ({ coinName, coinSymbol, price }) => {
             <br />
             <br />
             <div className={styles.coinDetailsLinks}>
-              <div className={styles.greyBtn}>solana.com</div>
+              <div className={styles.greyBtn}>Insurance News</div>
               <div className={styles.greyBtn}>Explorers</div>
               <div className={styles.greyBtn}>Community</div>
               <div className={styles.greyBtn}>Chat</div>
-              <div className={styles.greyBtn}>Source code</div>
               <div className={styles.greyBtn}>Whitepaper</div>
             </div>
             <br />

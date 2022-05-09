@@ -1,8 +1,9 @@
 import '../styles/globals.css'
+import { AppProps } from 'next/app'
 import { MoralisProvider } from 'react-moralis'
 import { CoinMarketProvider } from '../context/context'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MoralisProvider
       serverUrl="https://wyyl632fy9a1.usemoralis.com:2053/server"

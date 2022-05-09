@@ -64,9 +64,9 @@ const Trending = () => {
             Insurance. <br />{' '}
           </h1>
           <div className="flex">
-            <p className="text-gray-400">Highlights
-            {" "} &nbsp; </p>
-            <ReactSwitch className={styles.Switch}
+            <p className="text-gray-400">Highlights &nbsp; </p>
+            <ReactSwitch
+              className={styles.Switch}
               checked={checked}
               onChange={() => {
                 setchecked(!checked)
@@ -91,7 +91,7 @@ const Trending = () => {
 
         <div className={styles.flexCenter}>
           <TrendingCard
-            title="Trending insurance contracts"
+            title="Trending Insurance contracts"
             icon={fire}
             trendingData={trendingData}
           />
